@@ -13,7 +13,14 @@ provider "azurerm" {
   }
 }
 
-resource "azurerm_resource_group" "example" {
+resource "azurerm_resource_group" "my-cool-rg" {
   name     = "example"
   location = "West Europe"
+}
+
+resource "azurerm_public_ip" "example" {
+  name                = "acceptanceTestPublicIp1"
+  resource_group_name = azurerm_resource_group.my-cool-rg.name
+  location            = azurerm_resource_group.my-cool-rg.location
+  allocation_method   = "Static"
 }

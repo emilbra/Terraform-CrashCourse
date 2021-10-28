@@ -3,15 +3,16 @@
 Terraform er et Infrastructure-as-Code (IaC) verktøy som lar oss bygge, konfigurere, versjonere og deployere infrastruktur enkelt.
 
 ## Innhold
+
 ## Hvorfor er IaC Nyttig?
 
-Ved a å samle Infrastrukturen i kode er vi i bedre stand til å (blant annet) automatisere og versjonere infrastrukturen vår. Det er verdt å nevne her at det ikke kun gjelder infrastruktur slik som Virtuelle Maskiner i Azure, men også "high-level" ressurser slik som SaaS-tjenester (infrastrukten vises ikke til oss) eller NSG-regler i Azure.
+Ved å samle Infrastrukturen i kode er vi i bedre stand til å (blant annet) automatisere og versjonere infrastrukturen vår. Det er verdt å nevne her at det ikke kun gjelder infrastruktur slik som Virtuelle Maskiner i Azure, men også "high-level" ressurser slik som SaaS-tjenester (infrastrukten vises ikke til oss) eller NSG-regler i Azure.
 
-Terraform, og IaC generelt, lar seg lett integrere med CI/CD - altså at vi benytter automasjon til å fortløpende teste og deployere vår infrastruktur og endringer på den. Ved at Infrastrukturen videre er sjekket inn i et system for versjonskontroll (git) er det *mye* enklere å holdes styr på historikk og hva som er endret mellom hver gang. CI/CD, aytomasjon, og versjonskontroll tillatter større takt på endringene, og lar oss jobbe mer agilt eller DevOps-rettet.
+Terraform, og IaC generelt, lar seg lett integrere med CI/CD - altså at vi benytter automasjon til å fortløpende teste og deployere vår infrastruktur og endringer på den. Ved at Infrastrukturen videre er sjekket inn i et system for versjonskontroll (git) er det *mye* enklere å holde styr på historikk og hva som er endret mellom hver gang. CI/CD, automasjon, og versjonskontroll tillatter større takt på endringene, og lar oss jobbe mer agilt eller DevOps-rettet.
 
-Faktisk er CI/CD og raske iterasjoner noe som kjennetegnes i de fleste bedrifter som har kommet seg lagt i en såkalt "DevOps-revolusjon", hvor Terraform kan være et nyttig verktøy for å oppnå dette.
+Faktisk er CI/CD og raske iterasjoner noe som kjennetegnes i de fleste bedrifter som har kommet seg lagt i en såkalt "DevOps-evolusjon", hvor Terraform kan være et nyttig verktøy for å oppnå dette.
 
-Mer om DevOps og DevOps-revolusjon kan leses her:
+Mer om DevOps og DevOps-evolusjon kan leses her:
 
 [State Of DevOps Report 2021](https://puppet.com/resources/report/2021-state-of-devops-report) - Utarbeidet av Puppet, CircleCI med fler.
 
