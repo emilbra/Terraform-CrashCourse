@@ -11,6 +11,8 @@ resource "azurerm_resource_group" "my-cool-rg" {
 }
 ```
 
+Argumentene for ulike typer ressurser avhenger fullstendig av den typen ressurs, og deres dokumentasjon vil inneholde en oversikt over hvilke argumenter som er tilgjengelige. Et eksempel på et argument som går igjen er "name", som i dette eksemplet er definert ved hjelp av `name = "ressursgruppe-1"`
+
 ## Blocks, labels og arguments
 
 ### Blocks
@@ -57,12 +59,7 @@ Det som vill skje her er at location-argumentet på `"my-cool-ip"` henviser til 
 |---|---|---|
 | Local name  | ==>   | `my-cool-rg`  |
 | property  | ==>   | `location`   |
+
 Blir til `azurerm_resource_group.my-cool-rg.location`
 
 I dette eksemplet blir `azurerm_resource_group.my-cool-rg.location` til  `"West Europe"`
-
-### Resource Arguments
-
-Vi har allerede snakket om Arguments tidligere i dette dokumentet. I bunn og grunn er Arguments hvordan vi setter ulike verdier for ressursene.
-
-Argumentene for ulike typer ressurser avhenger fullstendig av den typen ressurs, og deres dokumentasjon vil inneholde en oversikt over hvilke argumenter som er tilgjengelige. Et eksempel på et argument som går igjen er `name = "test-navn"`
