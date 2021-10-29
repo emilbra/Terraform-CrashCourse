@@ -58,7 +58,7 @@ terraform plan --destroy # Lik terraform plan, men bare at vi ser hva som eventu
 
 En vanlig workflow når du jobber lokalt med terraform kan være som følger:
 
-0. Installer Terraform og koble til azure, for eksempel ved hjelp av `az login` dersom man benytter Azure CLI
+0. Installer Terraform og koble til tjenestetilbyder, for eksempel ved hjelp av `az login` dersom man benytter Azure CLI
 1. Skriv terraform-kode
 
 Stående på samme mappe som terraform koden:
