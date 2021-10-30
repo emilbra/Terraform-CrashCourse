@@ -38,3 +38,55 @@ Det er greit å nevne at uttrykket i en local value ikke er begrenset til å kun
 Eksempelkode
 ```
 
+## Henvsining til Variabler
+
+var.rg-name
+
+## Utsetting av variabler til egne filer
+
+Man kan for all del definere variabel-blockene i samme fil som ressurs-blockene i terraform-prosjektet, og for relativt små prosjekt er dette ganske greit.
+
+For større prosjekt er det derimot best practice å skille variablene ut i egne filer, slik at koden er mer lesbar og vi kan, som sagt supplye en ny variabel-fil istedet for å endre kildekoden vi jobber mot.
+
+For dette formålet er det vanlig å opprette to filer:
+
+`terraform.tfvars` og `variables.tf` navnet på disse er likegyldig, men husk at .tfvars må ha riktig filending.
+
+`variables.tf` har egentlig samme oppførsel som en hvilken som helst annen terraform, men vi velger å definere samtlige variabler i denne filen i stedet for i samme fil som ressursene.
+
+en variables-fil kan se slik ut:
+
+```Terraform
+variable "location" {
+    type = string
+    default = "West Europe"
+}
+
+#for øyeblikket priset på 66 kr i mnd.
+variable "size" {
+    type = string
+    default = "Standard_B1s"
+}
+
+variable "rg_name" {
+}
+```
+
+<!-- Hvordan kan jeg gjøre dette enda tydligere? i stedet for italics?
+ -->
+Merk at vi i eksemplet over *ikke har definert noen faktiske verdier for variablene*, selv om vi kan angi en default - det er denne som vil benyttes om ikke annet er angitt.
+
+<!-- Verifiser dette, Emil -->
+
+For å gi verdier til disse variablene kan man enten:
+
+- Gjøres gjennom kommandolinjen ved kjøring
+
+Eller
+
+- Utsette deklarasjonen til en egen .tfvars-fil
+
+<!-- Verifiser dette også...
+ -->
+.tfvars-filen er vanlig å inkludere i en .gitignore, siden dette ikke vanligvis er hensiktmessig, nyttig eller bestandig lurt å laste opp til kildekontroll.
+
