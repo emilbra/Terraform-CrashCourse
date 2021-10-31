@@ -41,7 +41,7 @@ provider "azurerm" {
 
 module "jumphost" {
     #hvor finner vi modulen?
-  source = "../../modules/jumphost"
+  source = "../modules/jumphost"
 }
 ``` 
 
