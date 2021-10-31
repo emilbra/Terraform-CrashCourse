@@ -3,12 +3,9 @@
 Dette repoet er ment til å gi en enkel introduksjon til Terraform, som er et språk som lar oss lage Infrastructure as Code.
 
 Innholdet i dette repoet er derfor ikke ment til å være utfyllende, men heller som en kickstart slik at du selv kan begynne å skrive terraform-kode, og for å styre infrastruktur vha Terraform!
-
-## Innhold
-
 ## Hva skal vi gjennom?
 
-Dette kurset tar for seg hovedsaklig følgende tema, som er gruppert i 6 læremoduler. Hver modul er en mappe, som har tilhørende dokument og terraform-kode. Innholdet i denne koden og hvordan det henger sammen detaljeres følgelig i dokumentene.
+Dette kurset tar for seg hovedsaklig følgende tema, som er gruppert i 6 deler. Hver del er en mappe, som har tilhørende dokument og terraform-kode. Innholdet i denne koden og hvordan det henger sammen detaljeres følgelig i dokumentene.
 
 | Nummer | Tema | Hvorfor |
 | - | - | -|
@@ -18,4 +15,4 @@ Dette kurset tar for seg hovedsaklig følgende tema, som er gruppert i 6 læremo
 | 3. | Variabler og Output | Hvordan angis og benyttes verdier? |
 | 4. | Funksjoner | Terraform har innebygde funksjoner for å transformere og kombinere verdier |
 | 5. | Moduler | Etterhvert er det vanskelig å ha all koden i en fil. Hva gjør vi? |
-| 6. | Eksempel-prosjekt | Kombinerer alt vi har lært. Bygger et miljø i Azure med VNet, Virtuelle Maskiner og NSG-er |
+| 6. | Eksempel-prosjekt | Kombinerer alt vi har lært. Bygger et miljø i Azure med VNet og Virtuelle Maskiner, med mer |

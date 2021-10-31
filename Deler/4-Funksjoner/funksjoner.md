@@ -2,13 +2,19 @@
 
 Dersom man er kjent med programmering fra før av, så vil konseptet med funksjoner være ganske likt, men det er nyttig å tenke at funksjoner har til hensikt å gjøre noe med verdier eller data, slik at vi kan bruke dette videre i terraform-koden.
 
-For eksempel kan vi iblant ønske å generere et unikt navn til en VM, eller kanskje så ønsker vi å genere et tilfeldig passord ved opprettelse av denne VM-en.
+For eksempel kan vi iblant ønske å lage et timestamp på ønsket format, eller så kan vi ønske å lese innhold fra en lokal fil for å benytte dette senere i koden.
 
-Eksmepel på begge caser:
+Eksempel på begge caser:
 
 ```Terraform
-Add me later alligator
+timestamp = formatdate("DDMMYYYY", timestamp())
 ```
+
+```Terraform
+file("${path.module}/note.txt")
+```
+
+Merk at disse funksjonene kan settes i variabler, eller i local variables, som vi har gjort i eksempel-koden for denne delen.
 
 Vi kan ikke bygge egne funksjoner i Terraform, men de innebygde funksjonene er ganske robuste, og det er et godt utvalg av de.
 

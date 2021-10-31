@@ -18,7 +18,7 @@ Argumentene for ulike typer ressurser avhenger fullstendig av den typen ressurs,
 ### Blocks
 
 `Blocks` er konteinere for annet innhold i Terraform og benyttes for å representere konfigurasjonen til et objekt.
-Det er uilke typer blocks, hvor eksemplet over viser til en `resource`-block. Det er denne typen block vi vil forholde oss mest til.
+Det er ulike typer blocks, hvor eksemplet over viser til en `resource`-block. Det er denne typen block vi vil forholde oss mest til.
 
 ### Labels
 
@@ -40,7 +40,7 @@ og
 
 ### Local name
 
-Det lokale navnet er kun lokalt og har ingen betydning utenfor koden. Vi kan for eksempel benytte dette til å vise til ressursgruppen i en annen ressurs. Eksempelvis i location-argumentet eller resource_group_name-argumentet hos en annen ressurs
+Det lokale navnet er kun lokalt og har ingen betydning utenfor terraform-konfigurasjonen. Vi kan for eksempel benytte dette til å vise til ressursgruppen i en annen ressurs. Eksempelvis i location-argumentet eller resource_group_name-argumentet hos en annen ressurs
 
 ```terraform
   resource "azurerm_public_ip" "my-cool-ip" {

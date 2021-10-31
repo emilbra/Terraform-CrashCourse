@@ -17,12 +17,6 @@ module "jumphost" {
   #hvor finner vi modulen?
   source = "../../modules/jumphost"
   env    = "test"
-  image = {
-    offer     = "Canonical"
-    publisher = "UbuntuServer"
-    sku       = "16.04-LTS"
-    version   = "latest"
-  }
 }
 
 #siden dette er root-module trenger vi å definere her at vi skal ha outputt.
