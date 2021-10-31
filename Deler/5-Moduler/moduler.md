@@ -1,6 +1,6 @@
 ﻿# Moduler i Terraform
 
-Som vi var innom i en tidligere læremodul kan det etterhvert bli vanskelig å holde styr på flere ressurser eller mye konfigurasjon, særlig som del av kun en fil.
+Som vi var innom i en tidligere del kan det etterhvert bli vanskelig å holde styr på flere ressurser eller mye konfigurasjon, særlig som del av kun en fil.
 
 Moduler er kontainere som huser flere ressurser som vanligvis benyttes sammen. Disse modulene består da av en eller flere .tf-filer i samme mappe.
 
