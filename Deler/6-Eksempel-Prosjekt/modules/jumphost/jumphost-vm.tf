@@ -49,7 +49,7 @@ resource "azurerm_linux_virtual_machine" "jumphost-vm" {
     version   = "latest"
   }
   tags = {
-    "Environmnt" = var.env
+    "Environemnt" = var.env
   }
 }
 
