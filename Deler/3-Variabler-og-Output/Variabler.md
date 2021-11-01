@@ -89,7 +89,7 @@ For større prosjekt er det derimot best practice å skille variablene ut i egne
 
 For dette formålet er det vanlig å opprette to filer:
 
-`terraform.tfvars` og `variables.tf`. Dersom .tfvars filen heter nøyaktig `terraform.tfvars` eller har ending `auto.tfvars` så vil denne lastets inn automatisk dersom den er tilgjengelig i mappen du deployerer terraform fra. Dersom den heter noe annet, vil du måtte angi denne vha flagget -var-file="testing.tfvars" istedet.
+`terraform.tfvars` og `variables.tf`. Dersom .tfvars filen heter nøyaktig `terraform.tfvars` eller har ending `auto.tfvars` så vil denne lastes inn automatisk dersom den er tilgjengelig i mappen du deployerer terraform fra. Dersom den heter noe annet, vil du måtte angi denne vha flagget -var-file="testing.tfvars" istedet.
 
 `variables.tf` har egentlig samme oppførsel som en hvilken som helst annen terraform-fil, men vi velger å definere samtlige variabler i denne filen i stedet for i samme fil som ressursene. For deretter å henvise til variablene i andre terraform-filer, feks `var.rg-name`
 
@@ -118,7 +118,7 @@ Merk at vi i eksemplet over *ikke har definert noen faktiske verdier for variabl
 
 For å gi verdier til disse variablene kan man enten:
 
-- Gjøres gjennom kommandolinjen ved kjøring 
+- Sette variabler gjennom kommandolinjen ved kjøring 
 
 ```Bash
 terraform apply -var="env=test_environment"
@@ -140,4 +140,4 @@ size     = "Standard_B1s"
 rg_name  = "test-rg"
 ```
 
-Og *voila*, her har vi definert variablene.
+Og *voila*, her har vi definert variablene. Når vi deployerer vha av terraform apply (og plan) så vil terraform.tfvars lases inn dersom denne er tilgjengelig i stående mappe.

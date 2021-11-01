@@ -29,3 +29,20 @@ terraform console
 Dette vil opprette et interaktivt konsoll som man teste ulike funksjoner i, uten at det påvirker konfigurasjonen.
 
 Her er et eksempel på at vi benytter funksjonen timestamp() til å gi oss en tag med nøyaktig dato på VM-en vi oppretter. (ikke tenk på at dette kan ses andre steder i Azure)
+
+```Terraform
+locals {
+  timestamp = formatdate("DDMMYYYY", timestamp())
+  note      = file("${path.module}/note.txt")
+
+}
+
+resource "azurerm_resource_group" "my-cool-rg" {
+  name     = "my-cool-rg-with-date"
+  location = "West Europe"
+  tags = {
+    date = local.timestamp
+    note = local.note
+  }
+}
+```

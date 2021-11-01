@@ -1,4 +1,4 @@
 resource "azurerm_resource_group" "jump-rg" {
-  name     = "jump-rg"
-  location = "West Europe"
+  name     = var.rg-name
+  location = var.location
 }

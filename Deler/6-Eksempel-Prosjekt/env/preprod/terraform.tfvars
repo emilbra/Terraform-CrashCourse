@@ -1,0 +1,6 @@
+﻿env = "preprod"
+location = "East US"
+jumphost-name = "jumper"
+rg-name = "jump-rg"
+vm_size = "Standard_F2"
+adminuser = "adminuser"
