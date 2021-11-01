@@ -7,7 +7,6 @@ resource "azurerm_network_interface" "jump-nic" {
     name                          = "internal"
     subnet_id                     = azurerm_subnet.jump-subnet.id
     private_ip_address_allocation = "Dynamic"
-    #her har jeg "glemt" å legge til public IP
     public_ip_address_id = azurerm_public_ip.jump-public-ip.id
   }
   tags = {
