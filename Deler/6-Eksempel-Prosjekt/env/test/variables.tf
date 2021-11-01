@@ -1,4 +1,4 @@
-﻿variable "env" {
+variable "env" {
   type = string
 }
 
@@ -28,3 +28,8 @@ variable "adminuser" {
   default = "adminuser"
 }
 
+#### konfigurasjon av storage account
+variable "sa-name" {
+  type    = string
+  default = "sa123415251"
+}

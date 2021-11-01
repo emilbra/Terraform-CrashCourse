@@ -15,13 +15,20 @@ provider "azurerm" {
 
 module "jumphost" {
   #hvor finner vi modulen?
-  source = "../../modules/jumphost"
-  env    = var.env
-  location = var.location
+  source        = "../../modules/jumphost"
+  env           = var.env
+  location      = var.location
   jumphost-name = var.jumphost-name
-  rg-name = var.rg-name
-  vm-size = var.vm-size
-  adminuser = var.adminuser
+  rg-name       = var.rg-name
+  vm-size       = var.vm-size
+  adminuser     = var.adminuser
+}
+
+module "storage-account" {
+  source   = "../../modules/storage-account"
+  env      = var.env
+  location = var.location
+  sa-name  = var.sa-name
 }
 
 #siden dette er root-module trenger vi å definere her at vi skal ha outputt.

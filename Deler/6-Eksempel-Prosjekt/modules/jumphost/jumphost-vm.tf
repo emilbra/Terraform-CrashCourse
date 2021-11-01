@@ -54,6 +54,7 @@ resource "azurerm_linux_virtual_machine" "jumphost-vm" {
   }
 }
 
+## Etterhvert ønsker jeg å benytte logiske operatorer for å koble et share til vmen, dersom det eksisterer ett share med korrekte tags.
 output "vm_public_ip" {
   value = azurerm_linux_virtual_machine.jumphost-vm.public_ip_address
 }

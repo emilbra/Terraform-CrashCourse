@@ -15,4 +15,4 @@ Dette kurset tar for seg hovedsaklig følgende tema, som er gruppert i 6 deler. 
 | 3. | Variabler og Output | Hvordan angis og benyttes verdier? |
 | 4. | Funksjoner | Terraform har innebygde funksjoner for å transformere og kombinere verdier |
 | 5. | Moduler | Etterhvert er det vanskelig å ha all koden i en fil. Hva gjør vi? |
-| 6. | Eksempel-prosjekt | Kombinerer alt vi har lært. Bygger et miljø i Azure med VNet og Virtuelle Maskiner, med mer |
+| 6. | Eksempel-prosjekt | Kombinerer alt vi har lært. Bygger et miljø i Azure med VNet, en virtuell maskin og en storage account|
