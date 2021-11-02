@@ -2,8 +2,6 @@
 
 Terraform er et Infrastructure-as-Code (IaC) verktøy som lar oss bygge, konfigurere, versjonere og deployere infrastruktur enkelt.
 
-## Innhold
-
 ## Hvorfor er IaC Nyttig?
 
 Ved å samle Infrastrukturen i kode er vi i bedre stand til å (blant annet) automatisere og versjonere infrastrukturen vår. Det er verdt å nevne her at det ikke kun gjelder infrastruktur slik som Virtuelle Maskiner i Azure, men også "high-level" ressurser slik som SaaS-tjenester (infrastrukten vises ikke til oss) eller NSG-regler i Azure.
