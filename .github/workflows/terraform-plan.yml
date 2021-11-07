@@ -1,5 +1,6 @@
 name: 'Terraform-plan'
 
+## TODO
 env:
   ARM_CLIENT_ID: ${{}}
   ARM_TENANT_ID: ${{}}
@@ -32,7 +33,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Install Terraform
         uses: hashicorp/setup-terraform@v1
-        with:
+        with: ## TODO
           cli_config_credentials_token: ${{}}
 
       - name: Terraform init
